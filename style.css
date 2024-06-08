@@ -1,0 +1,56 @@
+
+body{
+    background-color:#24353F ;
+}
+.smart{
+    color:#17A2B8;
+}
+.btn{
+   color: #17A2B8; 
+   background-color: #24353F;
+}
+
+.btn-custom-hover:hover {
+    background-color: #17A2B8;
+    border-color: #17A2B8;
+}
+.form-control{
+    background-color: #24353F;
+}
+.form-control-custom {
+    background-color: #24353F;
+    color: white;
+}
+.form-control-custom::placeholder {
+    color: white;
+    opacity: 1;
+}
+.btn-custom-hover:hover {
+    background-color: #17A2B8;
+    border-color: #17A2B8;
+}
+
+
+
+.active {
+    display: block !important;
+}
+
+form {
+    display: none;
+}
+
+form.active {
+    display: block;
+}
+
+#homePage {
+    display: none;
+}
+
+#homePage.active {
+    display: block;
+}
+
+
+  

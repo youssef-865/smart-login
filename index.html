@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+     
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="container pt-3">
+    <!-- Login Form -->
+    <form id="loginPage" class="pt-3 mt-3 active">
+        <div class="container shadow-lg pt-3 w-50 p-5" id="loginForm">
+            <div class="form-box pt-4">
+                <h1 class="smart text-center mt-5">Smart Login System</h1>
+            </div>
+            <div class="mb-3">
+                <label for="loginEmail" class="form-label"></label>
+                <input type="email" class="form-control form-control-custom" id="loginEmail" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="loginPassword" class="form-label"></label>
+                <input type="password" class="form-control form-control-custom" id="loginPassword" placeholder="Enter your password">
+            </div>
+            <div id="loginError" class="text-danger"></div>
+            <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-secondary btn-custom-hover">Login</button>
+            </div>
+            <div class="text-center pb-3">
+                <p class="small mb-0 text-white">Don't have an account? <a href="#" class="text-white text-decoration-none" id="showSignUp">Sign Up</a></p>
+            </div>
+        </div>
+    </form>
+
+    <!-- Sign Up Form -->
+    <form id="SignUpPage" class="pt-3 mt-3">
+        <div class="container shadow-lg pt-3 w-50 p-5" id="signUpForm">
+            <div class="form-box pt-4">
+                <h1 class="smart text-center mt-5">Smart Login System</h1>
+            </div>
+            <div class="mb-3">
+                <label for="signUpName" class="form-label"></label>
+                <input type="text" class="form-control form-control-custom" id="signUpName" placeholder="Your Name">
+            </div>   
+            <div class="mb-3">
+                <label for="signUpEmail" class="form-label"></label>
+                <input type="email" class="form-control form-control-custom" id="signUpEmail" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="signUpPassword" class="form-label"></label>
+                <input type="password" class="form-control form-control-custom" id="signUpPassword" placeholder="Enter your password">
+            </div>
+            <div class="mb-3">
+                <label for="signUpConfirmPassword" class="form-label"></label>
+                <input type="password" class="form-control form-control-custom" id="signUpConfirmPassword" placeholder="Confirm your password">
+            </div>
+            <div id="signUpError" class="text-danger"></div>
+            <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-secondary btn-custom-hover">Sign Up</button>
+            </div>
+            <div class="text-center pb-3">
+                <p class="small mb-0 text-white">You have an account? <a href="#" class="text-white text-decoration-none" id="showLogin">Sign In</a></p>
+            </div>
+        </div>
+    </form>
+
+    <!-- Home Page -->
+    <div id="homePageContent" class="container pt-3 mt-3 m-auto" style="display:none;">
+        <button id="logoutButton" class="btn btn-secondary btn-custom-hover text-center">Logout</button>
+        <h1 class="text-white pt-5">Welcome, <span id="userName"></span>!</h1>
+    </div>
+</div>
+
+      
+
+      
+
+<script src="./main.js"></script>
+</body>
+</html>
